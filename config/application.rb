@@ -18,5 +18,12 @@ module FinanceTracker
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    #
+    # Minimize Rails generator file creation
+    config.generators do |g|
+      g.assets = false
+      g.helper = false
+      g.stylesheets = false
+    end
   end
 end
