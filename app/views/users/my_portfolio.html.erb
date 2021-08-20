@@ -17,6 +17,11 @@
   <% end %>
 </div>
 
-<div id="results">
+<div id="results"></div>
 
-</div>
+<h4 class="mt-4">Your Tracked Stocks</h4>
+<% if !@tracked_stocks.empty? %>
+  <%= render 'stocks/list' %>
+<% else %>
+  <div class="mt-4">You have no stocks currently being tracked.</div>
+<% end %>
