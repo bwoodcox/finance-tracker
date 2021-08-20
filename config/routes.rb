@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'my_portfolio', to: 'users#my_portfolio'
   get 'search_stock', to: 'stocks#search'
   get 'stocks/search_stock'
-  resources :user_stocks, only: [:create]
+  resources :user_stocks, only: [:create, :destroy]
 end
