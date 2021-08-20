@@ -3,7 +3,7 @@
 <div class="search-container">
   <h4>Symbol Search</h4>
 
-  <%= form_tag( '#' , method: :get) do %>
+  <%= form_tag(search_stock_path, method: :get) do %>
     <div class="form-group row">
       <div class="col-sm-9">
         <%= search_field_tag :stock, params[:stock], placeholder: "Enter stock ticker symbol", autofocus: true, class: "form-control form-control-lg" %>
