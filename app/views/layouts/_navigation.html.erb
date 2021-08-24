@@ -11,7 +11,7 @@
             <%= link_to "My Portfolio", my_portfolio_path, class: "nav-link #{'active' if request.path == my_portfolio_path}" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <%= link_to "My Friends", my_friends_path, class: "nav-link #{'active' if request.path == my_friends_path}" %>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,7 +29,11 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <%
+=begin%>
+ <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> 
+<%
+=end%>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
